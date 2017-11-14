@@ -2,7 +2,7 @@
 // Created by Doge on 2017/11/14.
 //
 
-#include "../liblm/regressor.h"
+#include <liblm/regressor.h>
 
 VectorXd Regressor::predict(const MatrixXd &X) {
     MatrixXd X_test = combine_bias(scalaer->transform(X));

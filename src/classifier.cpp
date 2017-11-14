@@ -2,7 +2,7 @@
 // Created by Doge on 2017/11/14.
 //
 
-#include "../liblm/classifier.h"
+#include <liblm/classifier.h>
 
 VectorXd Classifier::predict(const MatrixXd &X)
 {

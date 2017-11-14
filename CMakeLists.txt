@@ -1,11 +1,11 @@
 cmake_minimum_required(VERSION 3.8)
-project(liblm)
+project(include/liblm)
 include_directories(include)
 
 
 set(CMAKE_CXX_STANDARD 11)
 
-file(GLOB SOURCE_FILES "src/*.cpp" "liblm/*.h")
+file(GLOB SOURCE_FILES "src/*.cpp" "include/liblm/*.h")
 
 set(demo demo.cpp)
 

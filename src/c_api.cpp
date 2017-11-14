@@ -124,7 +124,6 @@ lm_model* load_model(const char *filename) {
         printf("File `%s` does not exist!\n", filename);
         return NULL;
     }
-
     fread(&model->n_features, sizeof(size_t), 1, fp);
     fread(&model->type, sizeof(int), 1, fp);
     model->coef = (double *)malloc(sizeof(double) * model->n_features);

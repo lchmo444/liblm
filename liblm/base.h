@@ -6,7 +6,7 @@
 #define LIBLM_BASE_H
 
 #include "preprocess.h"
-#include <Eigen\Dense>
+#include <Eigen/Dense>
 
 using namespace Eigen;
 

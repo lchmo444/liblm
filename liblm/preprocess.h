@@ -5,7 +5,7 @@
 #ifndef LIBLM_PREPROCESS_H
 #define LIBLM_PREPROCESS_H
 
-#include <Eigen\Dense>
+#include <Eigen/Dense>
 using namespace Eigen;
 
 class StandardScaler {

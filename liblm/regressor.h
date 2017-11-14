@@ -6,7 +6,7 @@
 #define LIBLM_REGRESSOR_H
 
 #include "base.h"
-#include <Eigen\Dense>
+#include <Eigen/Dense>
 using namespace Eigen;
 
 class Regressor :public LinearModel {

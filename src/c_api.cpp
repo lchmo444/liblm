@@ -2,10 +2,10 @@
 // Created by Doge on 2017/11/14.
 //
 
-#include <liblm/c_api.h>
-#include <liblm/base.h>
-#include <liblm/classifier.h>
-#include <liblm/regressor.h>
+#include "../liblm/c_api.h"
+#include "../liblm/base.h"
+#include "../liblm/classifier.h"
+#include "../liblm/regressor.h"
 
 #include <cstdlib>
 #include <cstdio>

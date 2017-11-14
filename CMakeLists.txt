@@ -10,7 +10,7 @@ set(LIBRARY_OUTPUT_NAME liblm)
 
 set(CMAKE_CXX_STANDARD 11)
 
-file(GLOB SOURCE_FILES "src/*.cpp" "include/liblm/*.h")
+file(GLOB SOURCE_FILES "src/*.cpp" "liblm/*.h")
 
 set(demo demo.cpp)
 

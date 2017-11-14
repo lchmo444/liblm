@@ -1,15 +1,14 @@
 cmake_minimum_required(VERSION 3.8)
-project(include/liblm)
+project(liblm)
 include_directories(include)
 
 
 set(CMAKE_CXX_STANDARD 11)
 
-file(GLOB SOURCE_FILES "src/*.cpp" "include/liblm/*.h")
+add_subdirectory(src bin)
 
 set(demo demo.cpp)
 
-add_library(liblm SHARED ${SOURCE_FILES})
 add_executable(demo ${demo})
 
 set_target_properties(liblm PROPERTIES LINKER_LANGUAGE C)

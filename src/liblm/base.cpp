@@ -2,7 +2,7 @@
 // Created by Doge on 2017/11/14.
 //
 
-#include <liblm/base.h>
+#include "base.h"
 
 
 VectorXd LinearModel::predict(const MatrixXd & X) {

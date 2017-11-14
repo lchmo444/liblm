@@ -15,6 +15,8 @@ set_target_properties(liblm PROPERTIES LINKER_LANGUAGE C)
 target_link_libraries(demo liblm)
 
 
+
+
 set(RUNTIME_OUTPUT_DIRECTORY bin)
 set(RUNTIME_OUTPUT_NAME lm)
 

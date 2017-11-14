@@ -37,5 +37,6 @@ void test() {
 
 int main() {
     test();
+    cout<<"Hello World!"<<endl;
     return 0;
 }

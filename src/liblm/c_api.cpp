@@ -11,8 +11,6 @@
 #include <cstdlib>
 #include <cstdio>
 
-using namespace std;
-
 lm_model* lm_train(const lm_problem *prob, const lm_param *param) {
     LinearModel *lmodel;
 

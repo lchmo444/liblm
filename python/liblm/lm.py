@@ -7,6 +7,8 @@ __all__ = ['LinearRegression', 'Lasso', 'Ridge', 'ElasticNet', 'LogisticRegressi
 # Load C-module.
 if sys.platform == 'win32':
     _lib = CDLL("./liblm.dll")
+elif sys.platform == 'darwin':
+    _lib = CDLL("./liblm.dylib")
 else:
     _lib = CDLL("./liblm.so")
 

@@ -3,7 +3,6 @@
 //
 
 #include "regressor.h"
-
 VectorXd Regressor::predict(const MatrixXd &X) {
     MatrixXd X_test = combine_bias(scalaer->transform(X));
     return X_test * coef_;

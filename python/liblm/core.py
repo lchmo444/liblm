@@ -8,9 +8,9 @@ __all__ = ['LinearRegression', 'Lasso', 'Ridge', 'ElasticNet', 'LogisticRegressi
 if sys.platform == 'win32':
     _lib = CDLL("./liblm.dll")
 elif sys.platform == 'darwin':
-    _lib = CDLL("./liblm.dylib")
+    _lib = CDLL("./libliblm.dylib")
 else:
-    _lib = CDLL("./liblm.so")
+    _lib = CDLL("./libliblm.so")
 
 
 def fillprototype(f, restype, argtypes):

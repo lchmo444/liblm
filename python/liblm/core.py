@@ -1,17 +1,21 @@
 import numpy as np
 from ctypes import *
 import sys
+import os
 
 __all__ = ['LinearRegression', 'Lasso', 'Ridge', 'ElasticNet', 'LogisticRegression']
 
+DIR_NAME = os.path.dirname(os.path.abspath(__file__))
+
 # Load C-module.
 if sys.platform == 'win32':
-    _lib = CDLL("./liblm.dll")
+    FILE_NAME = "liblm.dll"
 elif sys.platform == 'darwin':
-    _lib = CDLL("./libliblm.dylib")
+    FILE_NAME = "libliblm.dylib"
 else:
-    _lib = CDLL("./libliblm.so")
+    FILE_NAME = "libliblm.so"
 
+_lib = CDLL(os.path.join(DIR_NAME, FILE_NAME))
 
 def fillprototype(f, restype, argtypes):
     """A helper function to decorate C-function

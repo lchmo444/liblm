@@ -34,8 +34,8 @@ void test_c() {
     d.col = 1;
     y = lm_predict(model, &d);
     for (int i = 0; i < 5; ++i)
-        printf_s("%.3f ", y[i]);
-    printf_s("\n");
+        printf("%.3f ", y[i]);
+    printf("\n");
     free_model(model);
 }
 

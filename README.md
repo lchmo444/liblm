@@ -93,6 +93,6 @@ Use cmake GUI to generate *Visual Studio* project, and build it by VS.
 After building, you will get a library file and a executable file.
 
 ## Build Python-package
-Put library file(`liblm.dll` or `libliblm.so` or `libliblm.dylib`) in to `python/liblm`.  
+Put library file(`liblm.dll` or `libliblm.so` or `libliblm.dylib`) into `python/liblm`.  
 * `$ cd python`
 * `$ python setup.py install`
